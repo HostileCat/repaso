@@ -1,0 +1,56 @@
+.header__menu-item:hover{
+    background-color: var(--secondary-color);
+    color: var(--button-color);
+    
+}
+
+.header__menu-item:active{
+    background-color: var(--button-color);
+    color: var(--clear-text);
+}
+
+.main-section__button:first-of-type:hover{
+    background-color: var(--button-color);
+    color: var(--clear-text);
+}
+
+.main-section__button:first-of-type:active{
+    background-color: var(--primary-color);
+    
+}
+
+.main-section__button:last-of-type:hover{
+    background-color: var(--primary-color);
+    
+}
+
+.main-section__button:last-of-type:active{
+    background-color: var(--title-color);
+    
+}
+
+.comments-section__view-more-button:hover{
+    background-color: var(--primary-color);
+}
+
+.comments-section__view-more-button:active{
+    background-color: var(--title-color);
+}
+
+.plans-section__plan-button:hover{
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.plans-section__plan-button:active{
+    background-color: var(--button-color);
+    border: 1px solid var(--primary-color);
+}
+
+.download-section__button:hover{
+    background-color: var(--primary-color);
+}
+
+.download-section__button:active{
+    background-color: var(--title-color);
+}

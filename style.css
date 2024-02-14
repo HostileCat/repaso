@@ -1,3 +1,5 @@
+@import url(UIkit.css);
+
 :root{
     --primary-color: #A81426;
     --secondary-color: #F8BEBD;
@@ -74,7 +76,13 @@ header{
 }
 .header__menu-item{
     text-decoration: none;
-    margin: 14px 24px;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 17px;
+}
+
+.header__menu-bars{
+    display: none;
 }
 
 
@@ -127,7 +135,7 @@ header{
 }
 
 .main-section__form :first-child{
-    background-color: transparent !important;
+    background-color: transparent;
     border: var(--button-color) 1px solid;
     color: var(--button-color);
     font-weight: bold;
@@ -228,7 +236,7 @@ header{
 }
 
 .comments-section__container{
-    width: var(--boxed-content);
+    max-width: var(--boxed-content);
     padding: 80px 16px;
     display: flex;
     flex-direction: column;
@@ -433,6 +441,7 @@ header{
     display: flex;
     justify-content: center;
     background-color: var(--primary-color);
+    color: var(--clear-text);
 }
 
 .footer__container{
@@ -449,6 +458,12 @@ header{
 }
 
 @media (max-width: 768px){
+    .header__menu-bars{
+        display: flex;
+        align-items: center;
+        margin-right: 16px;
+    }
+    
     .header__menu{
         display: none;
     }
@@ -464,7 +479,7 @@ header{
     }
 
     .offerings-section__container{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
         
     }
 
@@ -481,27 +496,32 @@ header{
     }
 }
 
-@media (max-width: 480px){
-    .main-section__image{
-        width: 300px;
+@media (max-width: 480px) {
+    /* Agrega aquí tus ajustes de CSS para pantallas de 480px y menos */
+    .main-section__image {
+        width: 100%; /* Ajustar el ancho al tamaño del contenedor */
     }
-    .features-section__image{
-        width: 300px;
+    .features-section__image {
+        width: 100%; /* Ajustar el ancho al tamaño del contenedor */
     }
-    .benefits-section__item{
-        width: 300px;
+    .benefits-section__item,
+    .plans-section__plan,
+    .benefits-section__figure {
+        width: 100%; /* Ajustar el ancho al tamaño del contenedor */
     }
-    
-    .benefits-section__figure{
-        width: 300px;
-        height: 300px;
+    .comments-section__comment {
+        min-width: 250px; /* Ajustar el ancho mínimo */
+    }
+    .comments-section__container {
+        width: 90%; /* Reducir el ancho del contenedor */
+        margin: 0 auto; /* Centrar el contenedor en la pantalla */
+        padding: 0 10px; /* Agregar relleno horizontal */
+    }
+    .comments-section__title {
+        font-size: var(--big-subtitle);
     }
 
-    .comments-section__comment{
-        min-width: 280px;
-    }
-
-    .plans-section__plan{
-        width: 300px;
+    .comments-section__author-name{
+        font-size: var(--short-subtitle);
     }
 }
