@@ -265,10 +265,6 @@ header{
     align-items: center;
 }
 
-.comments-section__author-link{
-    
-}
-
 .comments-section__author-name{
     color: var(--title-color);
     font-size: var(--big-subtitle);
@@ -497,25 +493,25 @@ header{
 }
 
 @media (max-width: 480px) {
-    /* Agrega aquí tus ajustes de CSS para pantallas de 480px y menos */
+    
     .main-section__image {
-        width: 100%; /* Ajustar el ancho al tamaño del contenedor */
+        width: 100%; 
     }
     .features-section__image {
-        width: 100%; /* Ajustar el ancho al tamaño del contenedor */
+        width: 100%; 
     }
     .benefits-section__item,
     .plans-section__plan,
     .benefits-section__figure {
-        width: 100%; /* Ajustar el ancho al tamaño del contenedor */
+        width: 100%; 
     }
     .comments-section__comment {
-        min-width: 250px; /* Ajustar el ancho mínimo */
+        min-width: 250px; 
     }
     .comments-section__container {
-        width: 90%; /* Reducir el ancho del contenedor */
-        margin: 0 auto; /* Centrar el contenedor en la pantalla */
-        padding: 0 10px; /* Agregar relleno horizontal */
+        width: 90%; 
+        margin: 0 auto; 
+        padding: 0 10px; 
     }
     .comments-section__title {
         font-size: var(--big-subtitle);
